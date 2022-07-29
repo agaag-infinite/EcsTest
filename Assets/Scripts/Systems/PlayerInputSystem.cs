@@ -12,7 +12,6 @@ namespace ECSLiteTest
             if (filter.GetEntitiesCount() == 0) return;
 
             var eventPool = world.GetPool<InputEventComponent>();
-            var events = filter.GetRawEntities();
 
             InputEventComponent lastEvent;
             lastEvent.TimeStamp = double.MinValue;
